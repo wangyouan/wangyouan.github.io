@@ -1,15 +1,13 @@
 ---
 layout: page
 title: Contact
-permalink: /about/
+permalink: /contact/
 ---
 
-Some information about you!
+Hello everyone, My name is Wang Youan. If you have difficulty in pronouncing "Youan", you can call me Mark. 
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm current a PhD candidate in Finance at HKU. I have many interests. If you find something interest, feel free to share with me.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[markwang@connect.hku.hk](mailto:markwang@connect.hku.hk)
