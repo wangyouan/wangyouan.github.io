@@ -12,10 +12,6 @@
   id: education
   layout: block
 
-- name: Projects
-  id: projects
-  layout: block
-
 - name: Skills
   id: skills
   layout: cloud

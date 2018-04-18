@@ -1,33 +1,29 @@
-- Languages:
+- Coding:
     primary:
       - Python
-      - PHP
     secondary:
       - Bash
-      - Ruby
       - Matlab
-      - Javascript
-- Frameworks:
-    primary:
-      - Flask
-      - Puppet
-    secondary:
-      - Chef
-      - Rails
+      - C++
+      - Stata
+      - VBA
+      - HTML
 - Systems:
     primary:
       - Debian
-      - Docker
-      - Jenkins
+      - Windows
     secondary:
-      - Nginx
-      - Logstash
       - AWS
 - Technical:
     primary:
       - Statistics
-      - Operations Research
+      - Web Crawler
     secondary:
-      - Signal Analysis
       - AWS
       - Artificial Intelligence
+- Languages:
+    primary:
+      - Chinese (Native)
+    secondary:
+      - English (fluent)
+
