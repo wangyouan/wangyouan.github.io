@@ -6,11 +6,11 @@
 
 - name: Professional
   id: professional
-  layout: block
+  layout: edu_pro_list
 
 - name: Education
   id: education
-  layout: block
+  layout: edu_pro_list
 
 - name: Skills
   id: skills

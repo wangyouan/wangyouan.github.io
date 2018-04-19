@@ -7,13 +7,8 @@
   role: MSc in Computer Science
   location: Hong Kong
   when: Sep 2015 - Jan 2017
-  bullets:
-    - 'Courses Taken: Mobile App Development; Software Engineering; Basic Financial Data Process, Machine Learning; Cloud Computing'
-    - 'Dissertation topic: Distributed financial data forecaster. Using distributed computing and Machine Learning to predict stock price'
 
 - org:  Shanghai Jiao Tong University
   role: B.S. in Electronic Science and Technology
   location: Shanghai, China
   when: Sep 2005 - Jun 2008
-  bullets:
-    - 'GPA 3.3/4.3 (Top 20%)'
