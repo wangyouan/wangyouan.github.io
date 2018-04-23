@@ -7,5 +7,4 @@ published: true
 comments: true
 tag: Python, Regression Analysis, Linear Regression, Cluster, Fixed Effect, linearmodels
 ---
-
-pass
+{% include /post/20180423_python_regression.html %}
