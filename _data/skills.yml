@@ -18,7 +18,9 @@
     primary:
       - Statistics
       - Web Crawler
+      - Textual Analysis
     secondary:
+      - Data Mining
       - AWS
       - Artificial Intelligence
 - Languages:
