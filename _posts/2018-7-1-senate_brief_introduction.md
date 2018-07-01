@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Senate Brief Introduction
+title: U.S. Senate Brief Introduction
 status: draft
 type: post
 published: true
