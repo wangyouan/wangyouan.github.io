@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install scikit-learn on Ubuntu
+title: Install Scikit-Learn on Ubuntu
 status: draft
 type: post
 published: true

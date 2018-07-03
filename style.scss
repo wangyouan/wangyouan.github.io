@@ -327,3 +327,16 @@ footer {
     clear: both;
   }
 }
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.dense-table {
+  border-bottom-width: 0;
+  border-top: none!important;
+  table-layout: auto;
+}
