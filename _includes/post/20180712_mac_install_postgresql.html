@@ -1,0 +1,65 @@
+<body>
+  <section id='main'>
+    <article>
+      <p>This is a quick guide for installing <a href="http://www.postgresql.org/">PostgreSQL</a> (<code>Postgres</code> for short) on a Mac with <a href="http://brew.sh/">Homebrew</a>, and starting and stopping it with <a href="https://github.com/mperham/lunchy">Lunchy</a>. If you&#39;ve just forked a Ruby on Rails project that requires Postgres, this tutorial will get you up and running in no time.</p>
+      
+      <p>If you&#39;re working on a brand new Rails app and need to create a new Postgres user and database for your app, I recommend <a href="http://blog.willj.net/2011/05/31/setting-up-postgresql-for-ruby-on-rails-development-on-os-x/">Will Jessop&#39;s tutorial</a> or <a href="http://www.rubyinside.com/how-to-install-and-use-postgres-on-os-x-for-ruby-and-rails-development-4999.html">Peter Cooper&#39;s screencast</a>.</p>
+      
+      <p></p>
+      
+      <h2>Step 1: Install Homebrew</h2>
+      
+      <p>To make sure you have all the tools necessary for Ruby on Rails development, I recommend you follow my tutorial for <a href="http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac">installing Xcode, Homebrew, Git, RVM, and Ruby on a Mac</a>.</p>
+      
+      <h2>Step 2: Update Homebrew</h2>
+      
+      <p>Before you install anything with Homebrew, you should always make sure it&#39;s up to date and that it&#39;s healthy:</p>
+      
+      <pre><code>$ brew update&#x000A;$ brew doctor&#x000A;</code></pre>
+      
+      <h2>Step 3: Install Postgres</h2>
+      
+      <pre><code>$ brew install postgresql&#x000A;</code></pre>
+      
+      <p>When you install Postgres, you will see a bunch of output in your Terminal that looks like this:</p>
+      
+      <p><img src="/images/brew-install-postgres-terminal-output.jpg" alt="Homebrew install postgres output in Terminal" /></p>
+      
+      <p>The important sections are <code>Build Notes</code>, <code>Create/Upgrade a Database</code>, and <code>Start/Stop PostgreSQL</code>. Make sure to follow those instructions to the letter.</p>
+      
+      <h2>Step 4: Create/Upgrade a database</h2>
+      
+      <p>If this is your first time installing Postgres with Homebrew, you&#39;ll need to create a database with:</p>
+      
+      <pre><code>$ initdb /usr/local/var/postgres -E utf8&#x000A;</code></pre>
+      
+      <p>I copied and pasted that command directly from the Terminal output. You should do the same, in case the instructions change in the future.</p>
+      
+      <h2>Step 5: Install Lunchy</h2>
+      
+      <pre><code>$ gem install lunchy&#x000A;</code></pre>
+      
+      <p>Lunchy is a helpful gem that will allow you to easily start and stop Postgres.</p>
+      
+      <h2>Step 6: Start/Stop Postgres</h2>
+      
+      <p>Once again, I&#39;m copying and pasting the following commands from my Terminal. Note that the second command is specific to the version of Postgres that was installed on my machine. If the version number has changed since I&#39;ve written this tutorial, using the command below won&#39;t work for you, so you should make sure to copy the command from your Terminal output.</p>
+      
+      <pre><code>$ mkdir -p ~/Library/LaunchAgents&#x000A;$ cp /usr/local/Cellar/postgresql/9.2.1/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/&#x000A;</code></pre>
+      
+      <p>Since we&#39;re using Lunchy, we <em>don&#39;t</em> need to run this third command:</p>
+      
+      <pre><code>$ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist&#x000A;</code></pre>
+      
+      <p>Instead, we&#39;ll simply use this to start Postgres:</p>
+      
+      <pre><code>$ lunchy start postgres&#x000A;</code></pre>
+      
+      <p>At this point, you should be all set to run the <code>rake</code> commands to create and use the database for the existing Rails app you&#39;re working on.</p>
+      
+      <p>To stop Postgres:</p>
+      
+      <pre><code>$ lunchy stop postgres&#x000A;</code></pre>
+    </article>
+  </section>
+</body>
