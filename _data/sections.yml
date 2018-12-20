@@ -12,6 +12,10 @@
   id: education
   layout: edu_pro_list
 
+- name: Research Papers
+  id: papers
+  layout: list
+
 - name: Presentations
   id: presentations
   layout: list
