@@ -20,6 +20,10 @@
   id: presentations
   layout: list
 
+- name: Academic Services
+  id: academia_services
+  layout: list
+
 - name: Skills
   id: skills
   layout: cloud
