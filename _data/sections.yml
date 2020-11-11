@@ -4,9 +4,6 @@
 #   id -> used for the CSS id and the yml file name. 
 #   layout -> which resume format to use from _includes/resume
 
-- name: Professional
-  id: professional
-  layout: edu_pro_list
 
 - name: Education
   id: education
@@ -23,6 +20,10 @@
 - name: Academic Services
   id: academia_services
   layout: list
+
+- name: Professional
+  id: professional
+  layout: edu_pro_list
 
 - name: Skills
   id: skills
