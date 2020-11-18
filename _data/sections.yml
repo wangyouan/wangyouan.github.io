@@ -9,6 +9,10 @@
   id: education
   layout: edu_pro_list
 
+- name: Research Field
+  id: research_interests
+  layout: text
+
 - name: Research Papers
   id: papers
   layout: list

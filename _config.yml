@@ -6,7 +6,7 @@
 title: Wang Youan
 
 # Short bio or description (displayed in the header)
-description: PhD Candate in HKU
+description: I'm a Ph.D. candidate in finance at HKU Business School, University of Hong Kong. My research focuses on empirical corporate finance.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/13817660?s=460&v=4
@@ -28,8 +28,8 @@ footer-links:
   rss: # just type anything here for a working RSS icon
   twitter:
   stackoverflow: users/5564344/youan-wang # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UCCnt-2aoKl0EpafTUIPZQOw # channel/<your_long_string> or user/<user-name>
-  googleplus: u/0/107780369290979234077 # anything in your profile username that comes after plus.google.com/
+  youtube:  # channel/<your_long_string> or user/<user-name>
+  googleplus:  # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://wangyouan.me
+url: https://wangyouan.me
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
