@@ -1,11 +1,11 @@
 - Coding:
     primary:
       - Python
+      - Stata
     secondary:
       - Bash
       - Matlab
       - C++
-      - Stata
       - VBA
       - HTML
 - Systems:
@@ -20,7 +20,6 @@
       - Web Crawler
       - Textual Analysis
     secondary:
-      - Data Mining
       - Machine Learning
 - Languages:
     primary:
