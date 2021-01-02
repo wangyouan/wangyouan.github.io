@@ -1,19 +1,13 @@
 - Coding:
     primary:
       - Python
-      - Stata
     secondary:
+      - Stata
       - Bash
       - Matlab
       - C++
       - VBA
       - HTML
-- Systems:
-    primary:
-      - Debian
-      - Windows
-    secondary:
-      - AWS
 - Technical:
     primary:
       - Statistics
