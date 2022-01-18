@@ -3,11 +3,12 @@
       - Python
     secondary:
       - Stata
+      - Fortran
       - Bash
       - Matlab
       - C++
       - VBA
-      - HTML
+      - HTML/CSS
 - Technical:
     primary:
       - Statistics
