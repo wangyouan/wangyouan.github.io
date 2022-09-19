@@ -12,4 +12,4 @@ I’m currently a Ph.D. candidate in Finance at HKU. If you find something inter
 
 ### Contact me
 
-[markwang@connect.hku.hk](mailto:markwang@connect.hku.hk)
+[wangyouan@xmu.edu.cn](mailto:wangyouan@xmu.edu.cn)
