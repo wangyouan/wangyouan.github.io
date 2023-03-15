@@ -32,6 +32,10 @@
   id: professional
   layout: edu_pro_list
 
+- name: Teaching
+  id: teaching
+  layout: edu_pro_list
+
 - name: Skills
   id: skills
   layout: cloud
