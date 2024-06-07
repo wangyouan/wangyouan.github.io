@@ -24,10 +24,6 @@
   id: presentations
   layout: list
 
-- name: Academic Services
-  id: academia_services
-  layout: list
-
 - name: Professional
   id: professional
   layout: edu_pro_list
