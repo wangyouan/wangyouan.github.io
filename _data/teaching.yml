@@ -4,6 +4,16 @@
   when: 2023&2024 Spring
 
 - org:  WISE, Xiamen University
-  role: Financial Economics and Asset Pricing (Undergraduate)
+  role: Financial Economics and Asset Pricing (Undergraduate, Double Degree Program)
   location: Fujian, China
   when: 2024 Spring&Summer
+
+- org:  WISE, Xiamen University
+  role: Corporate Finance (Undergraduate, Double Degree Program)
+  location: Fujian, China
+  when: 2025 Fall
+
+- org:  Chow, Xiamen University
+  role: Artificial Intelligence and Finance (Undergraduate)
+  location: Fujian, China
+  when: 2025 Fall
