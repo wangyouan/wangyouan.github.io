@@ -4,6 +4,11 @@
   when: 2023-2025 Spring
 
 - org:  WISE, Xiamen University
+  role: Corporate Finance: Theory and Practice (Postgraduate)
+  location: Fujian, China
+  when: 2026 Spring
+
+- org:  WISE, Xiamen University
   role: Financial Economics and Asset Pricing (Undergraduate, Double Degree Program)
   location: Fujian, China
   when: 2024 Spring&Summer
