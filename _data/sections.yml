@@ -1,40 +1,32 @@
 # Use this to define the sections of the resume
 # Format:
 #   name -> Name displayed on the section
-#   id -> used for the CSS id and the yml file name. 
+#   id -> used for the CSS id and the yml file name.
 #   layout -> which resume format to use from _includes/resume
+
+- name: Intro / Bio
+  id: research_interests
+  layout: text
 
 - name: Employment
   id: employment
   layout: edu_pro_list
 
-- name: Education
-  id: education
-  layout: edu_pro_list
-
-- name: Intro
-  id: research_interests
-  layout: text
-
-- name: Research Papers
+- name: Research
   id: papers
   layout: list
-
-- name: Presentations
-  id: presentations
-  layout: list
-
-- name: Professional
-  id: professional
-  layout: edu_pro_list
 
 - name: Teaching
   id: teaching
   layout: edu_pro_list
 
-- name: Skills
-  id: skills
-  layout: cloud
+- name: Presentations
+  id: presentations
+  layout: list
+
+- name: Education
+  id: education
+  layout: edu_pro_list
 
 - name: Honors
   id: honors

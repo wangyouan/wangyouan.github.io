@@ -1,6 +1,5 @@
-{% for section_hash in blurb %}
-{% for section in section_hash %}
-<ul>{{ section}}</ul>
-
-{% endfor %}
+{% for section in blurb %}
+<div class="resume-text">
+  {{ section | markdownify }}
+</div>
 {% endfor %}
