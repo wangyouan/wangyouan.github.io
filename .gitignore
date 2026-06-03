@@ -9,3 +9,4 @@ _site/
 vendor/
 
 .idea/
+Gemfile.lock

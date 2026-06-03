@@ -4,6 +4,7 @@ gem "jekyll"
 gem "jekyll-theme-dinky"
 gem "jekyll-sitemap"
 gem "kramdown-parser-gfm"
+gem "sass-embedded", "< 1.100.0"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
