@@ -1,0 +1,143 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include layout/head.html %}
+</head>
+<body class="swiss-page">
+
+  <!-- Header -->
+  <header class="swiss-header">
+    <div class="swiss-header__inner">
+      <span class="swiss-header__name" data-lang-en="Youan Wang" data-lang-zh="王佑安">Youan Wang</span>
+      <button class="swiss-header__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="swiss-header__nav" id="mainNav">
+        <a href="/" class="swiss-header__link active" data-lang-en="Bio" data-lang-zh="主页">Bio</a>
+        <a href="/research/" class="swiss-header__link" data-lang-en="Research" data-lang-zh="研究">Research</a>
+        <a href="/teaching/" class="swiss-header__link" data-lang-en="Teaching" data-lang-zh="教学">Teaching</a>
+        <a href="/students/" class="swiss-header__link" data-lang-en="Join Us" data-lang-zh="招生招聘">Join Us</a>
+        <a href="/cv/" class="swiss-header__link" data-lang-en="CV" data-lang-zh="简历">CV</a>
+        <button class="swiss-header__lang" id="langToggle" data-lang="en">中</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="swiss-hero">
+      <div class="swiss-hero__avatar">
+        <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Youan Wang">
+      </div>
+      <div class="swiss-hero__body">
+        <h1 class="swiss-hero__name" data-lang-en="Youan Wang" data-lang-zh="王佑安">Youan Wang</h1>
+        <p class="swiss-hero__title" data-lang-en="Associate Professor of Finance" data-lang-zh="金融学副教授">Associate Professor of Finance</p>
+        <p class="swiss-hero__affil">WISE & School of Economics, Xiamen University</p>
+        <p class="swiss-hero__bio" data-lang-en="I am an Associate Professor of Finance at the Wang Yanan Institute for Studies in Economics (WISE) and the School of Economics, Xiamen University. I received my Ph.D. in Finance from the University of Hong Kong. My research examines how political institutions, regulation, and stakeholder relations shape corporate decisions and financial markets, with particular interests in empirical corporate finance, political economy, corporate social responsibility, and environmental finance. I am also interested in applying machine learning and artificial intelligence to financial research. My work has been published in <em>Management Science</em>, <em>Review of Finance</em>, <em>Journal of Corporate Finance</em>, and <em>Journal of Financial and Quantitative Analysis</em>."
+           data-lang-zh="我是厦门大学王亚南经济研究院（WISE）与经济学院金融系副教授，获香港大学金融学博士学位。我的研究主要关注政治制度、政府监管与利益相关者关系如何影响企业决策和金融市场，研究领域包括实证公司金融、政治经济学、企业社会责任与环境金融。我也关注机器学习和人工智能在金融研究中的应用。研究成果发表于 <em>Management Science</em>、<em>Review of Finance</em>、<em>Journal of Corporate Finance</em> 和 <em>Journal of Financial and Quantitative Analysis</em>。">
+          I am an Associate Professor of Finance at the Wang Yanan Institute for Studies in Economics (WISE) and the School of Economics, Xiamen University. I received my Ph.D. in Finance from the University of Hong Kong. My research examines how political institutions, regulation, and stakeholder relations shape corporate decisions and financial markets, with particular interests in empirical corporate finance, political economy, corporate social responsibility, and environmental finance. I am also interested in applying machine learning and artificial intelligence to financial research. My work has been published in <em>Management Science</em>, <em>Review of Finance</em>, <em>Journal of Corporate Finance</em>, and <em>Journal of Financial and Quantitative Analysis</em>.
+        </p>
+        <a href="mailto:wangyouan@xmu.edu.cn" class="swiss-hero__email">✉ wangyouan@xmu.edu.cn</a>
+      </div>
+    </section>
+
+    <!-- News -->
+    {% assign news_items = site.data.news %}
+    {% if news_items.size > 0 %}
+    <section class="swiss-section swiss-section--alt">
+      <h2 class="swiss-section__heading" data-lang-en="News" data-lang-zh="最新动态">News</h2>
+      <div class="swiss-news-list">
+        {% for item in news_items limit:3 %}
+        <div class="swiss-news-item">
+          <span class="swiss-news-item__date"><span data-lang-en="{{ item.date_display_en | escape }}" data-lang-zh="{{ item.date_display_zh | escape }}">{{ item.date_display_en }}</span></span>
+          <span class="swiss-news-item__text"><span data-lang-en="{{ item.text_en | escape }}" data-lang-zh="{{ item.text_zh | escape }}">{{ item.text_en }}</span></span>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Employment -->
+    <section class="swiss-section">
+      <h2 class="swiss-section__heading" data-lang-en="Employment" data-lang-zh="工作经历">Employment</h2>
+      {% for entry in site.data.employment %}
+      <div class="swiss-item">
+        <div class="swiss-item__left"><span data-lang-en="{{ entry.role }}" data-lang-zh="{{ entry.role_zh | default: entry.role }}">{{ entry.role }}</span></div>
+        <div class="swiss-item__right">{{ entry.when }}</div>
+        <div class="swiss-item__sub"><span data-lang-en="{{ entry.org }}" data-lang-zh="{{ entry.org_zh | default: entry.org }}">{{ entry.org }}</span></div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Research -->
+    <section class="swiss-section">
+      <h2 class="swiss-section__heading" data-lang-en="Research" data-lang-zh="研究">Research</h2>
+
+      <h3 class="swiss-section__subheading" data-lang-en="Published Work" data-lang-zh="已发表论文">Published Work</h3>
+      {% for paper in site.data.publications %}
+      <div class="swiss-card">
+        <div class="swiss-card__title">
+          {% if paper.url %}
+          <a href="{{ paper.url }}" target="_blank" rel="noopener" class="swiss-card__title-link">{{ paper.title }}</a>
+          {% else %}
+          {{ paper.title }}
+          {% endif %}
+        </div>
+        <div class="swiss-card__meta">{{ paper.journal }} ({{ paper.year }})</div>
+        {% if paper.coauthors %}
+        <div class="swiss-card__coauthors">with {% include coauthors-link.html coauthors=paper.coauthors %}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+      <h3 class="swiss-section__subheading" data-lang-en="Working Papers" data-lang-zh="工作论文">Working Papers</h3>
+      {% for wp in site.data.working_papers %}
+      <div class="swiss-card">
+        <div class="swiss-card__title">{{ wp.title }}</div>
+        {% if wp.coauthors %}
+        <div class="swiss-card__coauthors">with {% include coauthors-link.html coauthors=wp.coauthors %}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Teaching -->
+    <section class="swiss-section swiss-section--alt">
+      <h2 class="swiss-section__heading" data-lang-en="Teaching" data-lang-zh="教学">Teaching</h2>
+      {% assign home_courses = site.data.teaching | where: "show_on_home", true %}
+      {% for course in home_courses %}
+      <div class="swiss-course">
+        <div class="swiss-course__title"><span data-lang-en="{{ course.course }}" data-lang-zh="{{ course.course_zh | default: course.course }}">{{ course.course }}</span></div>
+        <div class="swiss-course__meta"><span data-lang-en="{{ course.school }}, {{ course.university }}" data-lang-zh="{{ course.school_zh | default: course.school }}，{{ course.university_zh | default: course.university }}">{{ course.school }}, {{ course.university }}</span> · <span data-lang-en="{{ course.term }}" data-lang-zh="{{ course.term_zh | default: course.term }}">{{ course.term }}</span></div>
+      </div>
+      {% endfor %}
+      <p style="margin-top:16px;">
+        <a href="/teaching/" class="swiss-header__link" data-lang-en="View all courses →" data-lang-zh="查看全部课程 →">View all courses →</a>
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="swiss-section">
+      <h2 class="swiss-section__heading" data-lang-en="Education" data-lang-zh="教育背景">Education</h2>
+      {% for edu in site.data.education %}
+      <div class="swiss-item">
+        <div class="swiss-item__left"><span data-lang-en="{{ edu.degree }}" data-lang-zh="{{ edu.degree_zh | default: edu.degree }}">{{ edu.degree }}</span></div>
+        <div class="swiss-item__right">{{ edu.when }}</div>
+        <div class="swiss-item__sub"><span data-lang-en="{{ edu.school }}" data-lang-zh="{{ edu.school_zh | default: edu.school }}">{{ edu.school }}</span></div>
+      </div>
+      {% endfor %}
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="swiss-footer">
+    <span class="swiss-footer__name">Youan Wang</span>
+    <span class="swiss-footer__info" data-lang-en="Associate Professor of Finance · WISE & SOE, Xiamen University" data-lang-zh="金融学副教授 · 厦门大学王亚南经济研究院 & 经济学院">Associate Professor of Finance · WISE & SOE, Xiamen University</span>
+    <span class="swiss-footer__info">&copy; {{ site.time | date: '%Y' }} Youan Wang</span>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

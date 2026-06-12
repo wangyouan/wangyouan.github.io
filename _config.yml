@@ -42,7 +42,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://wangyouan.me
+url: https://wangyouan.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -71,7 +71,10 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :expanded
+  sass_dir: _sass
+  load_paths:
+    - _sass
 
 # Use the following plug-ins
 plugins:
@@ -84,7 +87,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
   - notebooks
 
-theme: jekyll-theme-dinky
+# Using custom Swiss Modernism theme (no external theme dependency)

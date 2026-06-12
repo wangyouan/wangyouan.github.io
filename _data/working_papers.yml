@@ -1,0 +1,58 @@
+- title: "Insider Trading Reforms and Corporate Transparency: Evidence from the STOCK Act"
+  coauthors: Amanda Heitz, Zhige Yu
+  abstract: "We examine how insider trading restrictions on government officials affect corporate transparency. Using the 2012 STOCK Act, we find that firms with significant government contracts reduced the frequency and precision of management forecasts, experienced declines in price informativeness, and increases in implied cost of capital."
+  abstract_zh: "本文以2012年美国《禁止国会内幕交易法案》（STOCK Act）的实施作为准自然实验，深入研究了针对政府官员的内幕交易限制如何影响企业信息透明度。STOCK法案明确禁止国会议员及其工作人员利用职务之便获取的非公开信息进行证券交易，并建立了相应的披露制度。研究以与政府有大量合同关系的企业为重点考察对象，发现该法案实施后产生了非预期的负面效应：受影响企业显著降低了管理层业绩预测的发布频率和精确度，股价中包含的公司特质信息减少（即股价信息含量下降），同时隐含权益资本成本上升。这些结果表明，限制政府官员的内幕交易虽然堵塞了一条信息流向市场的渠道，但也削弱了企业向市场主动披露高质量信息的动力，对理解信息披露监管与市场效率之间的复杂关系具有重要的理论与政策意义。"
+  detail_method_en: >
+    We implement a difference-in-differences design comparing firms with significant government
+    contracts to those without, before and after the 2012 STOCK Act. Treated firms are those
+    reporting at least 10% of revenue from government contracts in at least three of the four years
+    preceding the Act. We trace effects across three layers: (1) managerial disclosure (management
+    forecast frequency and precision), (2) private information production (analyst forecast accuracy
+    and dispersion), and (3) market information incorporation (price informativeness, price delay,
+    and implied cost of capital). To reinforce causal identification, we replicate our analyses using
+    two regression discontinuity designs: close general elections and unanticipated special elections.
+    We also analyze conference call transcripts to track changes in firms' discussions of government
+    contracting and policy risk. Robustness tests include the Oster (2019) coefficient stability test,
+    propensity score matching, entropy balancing, and placebo tests.
+  detail_method_zh: >
+    本文采用双重差分（DiD）设计，以与政府有重大合同关系的企业为处理组，无此类合同的
+    企业为对照组，比较STOCK法案实施前后的变化。处理组企业定义为在法案实施前四年中
+    至少三年在10-K报告中披露政府合同收入占总收入10%以上的企业。研究追踪法案对三个层面
+    的影响：（1）管理层信息披露（业绩预测频率与精确度），（2）私有信息生产（分析师预测
+    准确度与分歧度），（3）市场信息融入（股价信息含量、价格延迟、隐含资本成本）。
+    为加强因果推断，研究还使用两种断点回归设计进行了验证：接近常规选举与无法预期的
+    特别选举。此外，还分析了电话会议记录以追踪企业对政府采购和政策风险讨论的变化。
+    稳健性检验包括Oster（2019）系数稳定性检验、倾向得分匹配、熵平衡和安慰剂检验。
+  detail_results_en: >
+    Post-STOCK Act, firms with substantial government contracts experienced a 7.5% decline in
+    management forecast frequency, accompanied by an 8.6% increase in the likelihood of issuing
+    range (rather than point) forecasts. The pullback in disclosure was concentrated among firms
+    with stronger government ties: those heavily reliant on government sales, those with major
+    government customers, and politically connected firms. Conference call analysis confirms that
+    affected firms reduced discussions of procurement-related topics while increasing discussions of
+    regulatory and policy risk. Analyst forecast errors increased significantly, while forecast dispersion
+    decreased — suggesting herding or shared dependence on weaker public signals. Price informativeness
+    declined, price delay increased, and the implied cost of capital rose for affected firms. These
+    effects are robust when controlling for time-varying federal regulatory exposure using text-based
+    measures. The results reveal an unintended consequence of insider trading enforcement: restricting
+    informal access to policy-relevant insights can inadvertently impair the market's ability to
+    incorporate firm-specific information into prices.
+  detail_results_zh: >
+    STOCK法案实施后，拥有重大政府合同的企业管理层业绩预测频率下降了7.5%，同时发布
+    区间预测（而非点预测）的概率增加了8.6%。披露的减少主要集中在与政府关系更为紧密的
+    企业中：高度依赖政府采购的企业、拥有重要政府客户的企业以及有政治关联的企业。电话会议
+    文本分析证实，受影响企业减少了与政府采购相关话题的讨论，同时增加了对监管和政策风险的
+    讨论。分析师预测误差显著增大，而预测分歧度反而下降——表明分析师可能出现了羊群行为
+    或共同依赖更弱的公开信号。股价信息含量下降，价格延迟增加，隐含权益资本成本上升。
+    在控制了企业随时间变化的联邦监管暴露程度后，这些效应依然稳健。研究揭示了内幕交易
+    执法的一个非预期后果：限制企业对政策相关信息的非正式获取，可能会无意中损害市场将
+    公司特质信息融入股价的能力。
+  detail_figures:
+    - src: /images/research/paper5/table_management_guidance.png
+      caption_en: "Table 2: The STOCK Act and management guidance"
+      caption_zh: "表2：STOCK法案与管理层业绩指引"
+      alt_en: "Difference-in-differences table for the STOCK Act and management forecast frequency"
+    - src: /images/research/paper5/table_price_informativeness.png
+      caption_en: "Table 7: The STOCK Act and price informativeness"
+      caption_zh: "表7：STOCK法案与股价信息含量"
+      alt_en: "Regression table for the STOCK Act and stock price informativeness"

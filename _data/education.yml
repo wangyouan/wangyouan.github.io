@@ -1,14 +1,17 @@
-- org:  The University of Hong Kong
-  role: PhD in Finance
-  location: Hong Kong SAR, China
-  when: Sep 2017 - Jun 2022
+- degree: Ph.D. in Finance
+  degree_zh: 金融学博士
+  school: The University of Hong Kong
+  school_zh: 香港大学
+  when: Sep 2017 – Jun 2022
 
-- org:  The University of Hong Kong
-  role: MSc in Computer Science
-  location: Hong Kong SAR, China
-  when: Sep 2015 - Jan 2017
+- degree: M.Sc. in Computer Science
+  degree_zh: 计算机科学硕士
+  school: The University of Hong Kong
+  school_zh: 香港大学
+  when: Sep 2015 – Jan 2017
 
-- org:  Shanghai Jiao Tong University
-  role: B.S. in Electronic Science and Technology
-  location: Shanghai, China
-  when: Sep 2008 - Jun 2012
+- degree: B.S. in Electronic Science and Technology
+  degree_zh: 电子科学与技术学士
+  school: Shanghai Jiao Tong University
+  school_zh: 上海交通大学
+  when: Sep 2008 – Jun 2012

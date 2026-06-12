@@ -10,3 +10,6 @@ vendor/
 
 .idea/
 Gemfile.lock
+
+# WorkBuddy project data
+.workbuddy/

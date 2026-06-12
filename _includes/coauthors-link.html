@@ -1,0 +1,18 @@
+{%- assign names = include.coauthors | split: ", " -%}
+{%- for name in names -%}
+  {%- assign clean = name | strip -%}
+  {%- if clean == "Amanda Heitz" -%}
+    <a href="https://sites.google.com/view/amandaraeheitz" target="_blank" rel="noopener" class="swiss-card__coauthor-link">Amanda Heitz</a>
+  {%- elsif clean == "Zigan Wang" -%}
+    <a href="https://www.wangzigan.com/" target="_blank" rel="noopener" class="swiss-card__coauthor-link">Zigan Wang</a>
+  {%- elsif clean == "Tri Vi Dang" -%}
+    <a href="https://www.columbia.edu/~td2332/" target="_blank" rel="noopener" class="swiss-card__coauthor-link">Tri Vi Dang</a>
+  {%- elsif clean == "Terry J. Shevlin" -%}
+    <a href="https://merage.uci.edu/research-faculty/faculty-directory/Terry-Shevlin.html" target="_blank" rel="noopener" class="swiss-card__coauthor-link">Terry J. Shevlin</a>
+  {%- elsif clean == "Ke Na" -%}
+    <a href="https://www.ckgsb.edu.cn/faculty/professor_team/detail/156/nake.html" target="_blank" rel="noopener" class="swiss-card__coauthor-link">Ke Na</a>
+  {%- else -%}
+    {{ clean }}
+  {%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}

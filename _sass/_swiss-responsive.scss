@@ -1,0 +1,189 @@
+// ============================================================
+// Swiss Modernism — Responsive Breakpoints
+// ============================================================
+
+// --- Tablet (≤ 768px) ---
+@media screen and (max-width: 768px) {
+  :root {
+    --text-4xl: 2rem;     // 32px
+    --text-3xl: 1.5rem;   // 24px
+    --text-2xl: 1.25rem;  // 20px
+    --text-xl:  1.125rem; // 18px
+  }
+
+  .swiss-header {
+    &__inner {
+      padding: var(--space-3) var(--space-5);
+    }
+
+    &__nav {
+      gap: var(--space-4);
+    }
+
+    &__link {
+      font-size: var(--text-xs);
+    }
+  }
+
+  .swiss-hero {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: var(--space-12) var(--space-5);
+    gap: var(--space-6);
+
+    &__avatar img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .swiss-section {
+    padding: var(--space-10) var(--space-5);
+
+    &--alt {
+      padding-left: var(--space-5);
+      padding-right: var(--space-5);
+    }
+  }
+
+  .swiss-page-header,
+  .swiss-content {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .swiss-footer {
+    padding: var(--space-8) var(--space-5);
+  }
+}
+
+// --- Mobile (≤ 480px) ---
+@media screen and (max-width: 480px) {
+  :root {
+    --text-4xl: 1.75rem;   // 28px
+    --text-3xl: 1.375rem;  // 22px
+    --text-2xl: 1.125rem;  // 18px
+  }
+
+  // --- Mobile Header ---
+  .swiss-header {
+    &__inner {
+      padding: var(--space-3) var(--space-4);
+    }
+
+    &__name {
+      font-size: var(--text-base);
+    }
+
+    &__nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--color-white);
+      flex-direction: column;
+      align-items: stretch;
+      padding: var(--space-3) var(--space-4);
+      gap: 0;
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+
+      &.is-open {
+        display: flex;
+      }
+    }
+
+    &__link {
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--color-border-light);
+      text-align: center;
+
+      &:last-child { border-bottom: none; }
+    }
+
+    &__lang {
+      margin-top: var(--space-2);
+      text-align: center;
+      display: block;
+    }
+
+    &__toggle {
+      display: block;
+    }
+  }
+
+  // --- Mobile Hero ---
+  .swiss-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-10) var(--space-4);
+    gap: var(--space-6);
+
+    &__avatar img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__bio {
+      max-width: 100%;
+      font-size: var(--text-sm);
+    }
+
+    &__email {
+      justify-content: center;
+    }
+  }
+
+  // --- Mobile Sections ---
+  .swiss-section {
+    padding: var(--space-8) var(--space-4);
+
+    &--alt {
+      padding-left: var(--space-4);
+      padding-right: var(--space-4);
+    }
+
+    &__heading {
+      font-size: var(--text-2xl);
+    }
+  }
+
+  .swiss-card,
+  .swiss-grant,
+  .swiss-course {
+    padding: var(--space-4);
+
+    &__title {
+      font-size: var(--text-sm);
+    }
+
+    &__meta {
+      font-size: var(--text-xs);
+    }
+  }
+
+  .swiss-item {
+    flex-direction: column;
+    gap: 0;
+
+    &__right {
+      white-space: normal;
+    }
+  }
+
+  .swiss-page-header {
+    padding: var(--space-10) var(--space-4) var(--space-6);
+  }
+
+  .swiss-content {
+    padding: 0 var(--space-4) var(--space-10);
+  }
+
+  .swiss-footer {
+    padding: var(--space-6) var(--space-4);
+    flex-direction: column;
+    text-align: center;
+  }
+}

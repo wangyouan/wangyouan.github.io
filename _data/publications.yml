@@ -1,0 +1,217 @@
+- title: "Corporate Political Connections and Favorable Environmental Regulation"
+  journal: Management Science
+  year: 2023
+  coauthors: Amanda Heitz, Zigan Wang
+  url: "https://doi.org/10.1287/mnsc.2020.3931"
+  abstract: "We examine whether the Environmental Protection Agency (EPA) uniformly enforces the Clean Air Act for politically connected and unconnected firms using a close election setting. We find no difference in regulated pollutant emissions or EPA investigations between the two groups, though connected firms experience less regulatory enforcement and lower penalties."
+  abstract_zh: "本文利用美国国会选举的接近结果作为外生冲击，系统研究了政治关联对企业环境监管的影响。基于《清洁空气法》框架下的企业排污数据与EPA执法记录，研究发现：在污染物排放水平和环保部门调查频率方面，有政治关联的企业与无政治关联的企业之间不存在显著差异；然而，有政治关联的企业在面临违规处罚时，所受到的执法力度显著更轻、罚款金额显著更低。这一发现揭示了政治关联并非通过影响企业排污行为本身，而是通过削弱监管惩罚力度来为企业创造有利的监管环境，对理解政治关联在企业环境合规中的实际作用机制具有重要启示。"
+  doi: "10.1287/mnsc.2020.3931"
+  detail_method_en: >
+    We employ a Regression Discontinuity Design (RDD) exploiting close U.S. congressional elections
+    where the margin of victory is less than 5%. This framework causally compares firms connected to
+    politicians who narrowly won with those connected to politicians who narrowly lost, isolating
+    exogenous variation in firms' political networks. We analyze two stages of EPA enforcement:
+    (1) EPA investigations into potential Clean Air Act violations, and (2) enforcement actions and
+    penalties. Our sample spans 1980–2010, combining EPA's Integrated Compliance Information System
+    (ICIS) data, Federal Election Committee (FEC) contribution records, Compustat financial data, and
+    Toxics Release Inventory (TRI) emissions data.
+  detail_method_zh: >
+    本文采用断点回归设计（RDD），利用美国国会选举中胜负差距小于5%的接近选举作为识别策略。
+    该框架通过因果比较——向险胜候选人捐款的企业（有政治关联）与向险败候选人捐款的企业
+    （无政治关联）——来识别政治关联的外生变化对企业环境监管结果的影响。研究分析EPA执法的
+    两个阶段：（1）EPA对潜在违反《清洁空气法》行为的调查；（2）执法行动与罚款处罚。
+    样本覆盖1980–2010年，整合了EPA综合合规信息系统（ICIS）执法数据、联邦选举委员会
+    （FEC）政治捐款记录、Compustat财务数据以及有毒物质排放清单（TRI）的排放数据。
+  detail_results_en: >
+    We find no significant difference in regulated pollutant emissions or in the number of EPA
+    investigations between politically connected and unconnected firms. However, connected firms are
+    significantly less likely to incur environmental penalties and realize smaller fines. These effects
+    are stronger when firms are connected to politicians with greater ability to influence regulators
+    (majority party members, party leadership, high seniority, seats on environment/energy committees)
+    and when the connected firms are more important to their supported politicians (same-state
+    headquarters, crucial industries by sales or employment, top campaign donors). The results suggest
+    that campaign contributions can indirectly benefit firms through reduced regulatory enforcement
+    rather than through changes in actual pollution behavior.
+  detail_results_zh: >
+    研究发现，有政治关联的企业与无政治关联的企业在受监管污染物排放水平以及EPA调查频率方面
+    不存在显著差异。然而，有政治关联的企业面临环境罚款的概率显著更低、罚款金额也显著更小。
+    当企业与更有能力影响监管者的政治人物建立关联时（如多数党成员、党派领导层、高资历议员、
+    环境或能源委员会委员），以及当企业在所支持的政治人物眼中更为重要时（如同州总部所在地、
+    关键行业企业、大额捐款者），这种偏向性执法效应更为显著。此外，当企业的政治关联因选举
+    失败而丧失后，企业面临的环保执法力度反而会加强。这些结果表明，政治捐款并非通过改变
+    企业实际排污行为来创造价值，而是通过削弱监管惩罚力度间接为企业带来利益。
+  detail_figures:
+    - src: /images/research/paper1/table_enforcement_outcomes.png
+      caption_en: "Table 2: Political connections and EPA enforcement outcomes"
+      caption_zh: "表2：政治关联与EPA执法结果"
+      alt_en: "Regression table showing political connections and EPA actions, penalties, and fines"
+    - src: /images/research/paper1/table_influence_channels.png
+      caption_en: "Table 4: Politician power and firm importance channels"
+      caption_zh: "表4：政治人物影响力与企业重要性渠道"
+      alt_en: "Channel analysis table for politician power and firm importance"
+
+- title: "The Role of Financial Constraints in Firm Investment under Pollution Abatement Regulation"
+  journal: Journal of Corporate Finance
+  year: 2022
+  coauthors: Tri Vi Dang, Zigan Wang
+  url: "https://doi.org/10.1016/j.jcorpfin.2022.102252"
+  abstract: "This paper empirically analyzes pollution abatement regulation within the context of the Clean Air Act and shows that financial constraints are an important determinant of whether mandatory pollution abatement crowds out or stimulates R&D investment and capital expenditure."
+  abstract_zh: >
+    本文在《清洁空气法》的严格监管框架下，深入探讨了融资约束如何影响企业在面对强制性
+    污染减排时的投资决策。研究发现，融资约束是决定污染减排监管对企业投资产生\u201c挤出效应\u201d
+    还是\u201c激励效应\u201d的关键因素：对于融资不受约束的企业而言，污染减排要求显著促进了其研发
+    投资和资本支出的增长，企业倾向于通过技术创新来实现合规；相反，对于融资严重受限的企业，
+    强制性的污染减排支出挤占了原本可用于研发和扩大再生产的资金，导致了投资的下降。这一发现
+    为理解环境监管的经济后果提供了新的微观机制视角，也对环境政策的精准施策具有重要的政策含义。
+  doi: "10.1016/j.jcorpfin.2022.102252"
+  detail_method_en: >
+    This paper empirically analyzes pollution abatement regulation within the context of the Clean Air Act
+    (CAA). We examine how firms' financial constraints interact with mandatory pollution abatement
+    requirements to shape R&D investment and capital expenditure decisions. The empirical framework uses
+    plant-level EPA emissions and enforcement data merged with Compustat financial data. Financial
+    constraints are measured using standard proxies including the KZ Index, firm size, dividend payout,
+    and credit ratings. The analysis exploits variation in the stringency of CAA nonattainment designations
+    across counties and over time to identify the causal effect of pollution abatement pressure on
+    investment outcomes, and then interacts this pressure with measures of financial constraints.
+  detail_method_zh: >
+    本文在《清洁空气法》的监管框架下，实证分析了企业融资约束如何与强制性污染减排要求
+    相互作用，进而影响企业的研发投资与资本支出决策。研究使用工厂层面的EPA排放与执法数据，
+    与Compustat财务数据进行匹配。融资约束采用学术界常用的多个指标进行测度，包括KZ指数、
+    企业规模、股息支付和信用评级等。实证策略利用《清洁空气法》中各地区达标/未达标
+    （nonattainment）认定的差异及其跨时间变化来识别污染减排压力对企业投资的因果效应，
+    并在此基础上引入融资约束的交互项进行分析。
+  detail_results_en: >
+    We find that financial constraints are a critical determinant of whether mandatory pollution abatement
+    crowds out or stimulates firm investment. Financially unconstrained firms respond to increased
+    pollution abatement pressure by significantly increasing R&D investment and capital expenditure,
+    consistent with a "Porter Hypothesis" mechanism where regulatory pressure stimulates innovation.
+    In contrast, financially constrained firms experience a crowding-out effect, where mandatory
+    abatement expenditures displace R&D and capital investment. The results are robust to alternative
+    measures of financial constraints and pollution abatement pressure. These findings highlight the
+    importance of considering firm heterogeneity in financial conditions when designing and
+    evaluating environmental policies.
+  detail_results_zh: >
+    研究发现，融资约束是决定强制性污染减排对企业投资产生"挤出效应"还是"激励效应"的
+    关键因素。融资不受约束的企业在面临更高的污染减排压力时，显著增加了研发投资和资本支出，
+    这与"波特假说"的机制一致——即合理的环境监管压力可以激发企业创新。相比之下，融资
+    严重受限的企业则出现了明显的挤出效应：强制性的污染减排支出挤占了原本可用于研发和
+    扩大再生产的资金。这一结果在使用不同的融资约束测度方式和污染减排压力指标时均保持稳健。
+    研究表明，在设计和评估环境政策时，必须充分考虑企业在财务状况方面的异质性。
+  detail_figures:
+    - src: /images/research/paper3/table_baseline_effects.png
+      caption_en: "Table 3: Baseline effects of mandatory pollution abatement regulation"
+      caption_zh: "表3：强制污染减排监管的基准效应"
+      alt_en: "Baseline regression table for pollution abatement regulation and firm outcomes"
+    - src: /images/research/paper3/table_financial_constraints.png
+      caption_en: "Table 4: Pollution abatement investment under financial constraints"
+      caption_zh: "表4：融资约束下的污染减排投资"
+      alt_en: "Regression table showing pollution abatement investment by financial constraint status"
+
+- title: "The Power of the People: Labor Unions and Corporate Social Responsibility"
+  journal: Review of Finance
+  year: 2024
+  coauthors: Amanda Heitz, Zigan Wang
+  url: "https://doi.org/10.1093/rof/rfae018"
+  abstract: "We study the causal impact of unionization on stakeholders by analyzing how close labor union elections affect environmental and social (E&S) scores. We find that unionization is associated with an increase in internal social scores that primarily benefit employees and a decrease in external E&S scores that primarily benefit non-employees."
+  abstract_zh: >
+    本文利用美国企业工会选举中的接近投票结果作为因果识别策略，系统考察了工会化对企业
+    环境与社会（E&S）表现的因果效应。研究发现，工会的成立对企业社会责任表现产生了显著但
+    方向分化的影响：一方面，工会化显著提升了企业内部社会评分——包括员工福利、工作场所安全、
+    员工培训等方面，这些改善直接惠及企业员工群体；另一方面，工会化却导致了企业外部环境与
+    社区相关评分的下降——包括环境保护、社区关系、慈善捐赠等主要惠及非员工利益相关者的维度。
+    这一结果表明，工会作为员工利益的代表，在推动企业社会责任方面存在明确的\u201c内部偏向\u201d，
+    为企业社会责任的政治经济学分析提供了新的经验证据。
+  doi: "10.1093/rof/rfae018"
+  detail_method_en: >
+    We construct ten yearly, firm-level environmental and social (E&S) scores using the Thomson Reuters
+    ASSET4 ESG database (2002–2021), which contains 70 environmental and 78 social indicators.
+    These include four internal social scores primarily benefiting employees (Employment Quality,
+    Training & Development, Diversity & Opportunity, Health & Safety) and six external scores
+    primarily benefiting non-employees (Emissions Reductions, Resource Reductions, Product Innovation,
+    Community Involvement, Human Rights, Product Responsibility). We analyze year-over-year
+    percentage changes in these scores. To establish causality, we implement a Regression Discontinuity
+    Design (RDD) using close NLRB union elections where the vote margin is less than 20%.
+    We further augment the analysis with real outcome variables: worker injury rates and toxic gas emissions.
+  detail_method_zh: >
+    本文基于Thomson Reuters ASSET4 ESG数据库（2002–2021年），构建了10个企业层面的
+    年度环境与社会（E&S）评分指标。该数据库包含70个环境指标和78个社会指标，涵盖4个
+    主要惠及员工的内部社会评分（就业质量、培训与发展、多元化与机会、健康与安全）以及
+    6个主要惠及外部利益相关者的外部评分（减排、资源节约、产品创新、社区参与、人权、
+    产品责任）。研究分析这些评分的年度百分比变化。为建立因果关系，采用断点回归设计（RDD），
+    利用NLRB工会选举中支持率差距小于20%的接近选举结果。同时补充了实际结果变量的分析：
+    工伤率与有毒气体排放量。
+  detail_results_en: >
+    Our RDD estimates show that union election victories lead to a 16.7% increase in diversity score
+    changes and a 5.7% reduction in emission score changes, with larger magnitudes when using quadratic
+    polynomial specifications. The divergence between internal and external scores is amplified when firms
+    face greater financial constraints (measured by the KZ Index), suggesting resource reallocation from
+    external stakeholders toward employees. Furthermore, the effects are magnified when unions have more
+    bargaining power: in states without right-to-work laws and when local employment rates are high.
+    Real outcomes confirm this pattern: unionization is associated with fewer worker injuries but
+    increased emissions of certain toxic gases. These findings indicate that empowering one stakeholder
+    group (employees) does not necessarily benefit all stakeholders.
+  detail_results_zh: >
+    RDD估计结果显示，工会选举胜利导致企业多元化评分增长16.7%，排放评分下降5.7%，
+    在使用二次多项式设定时效应更大。内部与外部评分之间的分化在企业面临更大的融资约束时
+    （以KZ指数衡量）被显著放大，表明存在从外部利益相关者向员工群体的资源重新配置。
+    此外，当工会拥有更强的议价能力时（企业位于无"工作权法"的州、当地就业率高），
+    基准效应被进一步放大。实际结果变量分析也印证了这一模式：工会化与企业工伤率下降相关，
+    但同时也与某些有毒气体排放量的增加相关。这些发现表明，赋予某一利益相关者群体（员工）
+    更大权力，并不必然惠及所有利益相关者。
+  detail_figures:
+    - src: /images/research/paper2/table_union_esg.png
+      caption_en: "Table 5: Union elections and changes in internal and external E&S scores"
+      caption_zh: "表5：工会选举与企业内外部环境和社会评分变化"
+      alt_en: "RDD results table for union elections and environmental and social scores"
+    - src: /images/research/paper2/table_financial_constraints.png
+      caption_en: "Table 7: Financial constraints and the allocation of E&S performance"
+      caption_zh: "表7：融资约束与环境和社会绩效的配置"
+      alt_en: "Interaction table showing how financial constraints affect unionization and E&S scores"
+
+- title: "Political Connections, Financial Constraints, and Corporate Taxation"
+  journal: Journal of Financial and Quantitative Analysis
+  year: Online
+  coauthors: Ke Na, Terry J. Shevlin, Zigan Wang
+  url: "https://jfqa.org/2026/05/10/political-connections-financial-constraints-and-corporate-taxation/"
+  abstract: "We argue that the greater tax planning of politically connected firms depends critically on firms' financial conditions. After a plausibly exogenous increase in political connections, financially unconstrained firms increase their tax planning while constrained firms decrease it, as they obtain new external debt financing at lower costs."
+  abstract_zh: "本文提出并验证了一个重要观点：有政治关联的企业在税收筹划方面的优势并非普遍存在，而是关键取决于企业的财务状况。借助政治关联的外生增加事件，研究发现：对于融资不受约束的企业，政治关联的提升使其能够更积极地进行税收筹划，有效降低实际税负；然而，对于融资受到严重约束的企业，政治关联反而导致其税收筹划程度的下降——这是因为这些企业通过政治关联获得了成本更低的外部债务融资，降低了对内部资金和税收节约的依赖，从而减少了避税动机。这一发现揭示了政治关联、融资约束与企业税收行为之间的复杂互动关系，丰富了政治经济学与公司金融交叉领域的研究。"
+  detail_method_en: >
+    We examine how political connections interact with financial constraints to shape corporate tax
+    planning. Our identification strategy exploits plausibly exogenous increases in firms' political
+    connections using close congressional elections. We measure tax planning using both GAAP and
+    cash effective tax rates (ETRs), book-tax differences, and discretionary permanent differences.
+    Financial constraints are measured using the KZ Index, the SA Index, and firm size and payout
+    policy. The sample combines Compustat financial data with Federal Election Committee (FEC)
+    contribution records covering multiple election cycles.
+  detail_method_zh: >
+    本文考察政治关联如何与融资约束相互作用以影响企业的税收筹划行为。识别策略借助接近
+    国会选举结果所带来的政治关联外生变化。税收筹划采用多个指标衡量：GAAP有效税率、
+    现金有效税率、账税差异以及可操纵的永久性差异。融资约束则使用KZ指数、SA指数、
+    企业规模和分红政策等多维度指标进行综合衡量。研究样本结合了Compustat财务数据与
+    联邦选举委员会（FEC）的政治捐款记录，覆盖多个选举周期。
+  detail_results_en: >
+    After an exogenous increase in political connections, financially unconstrained firms significantly
+    increase their tax planning activities and achieve lower effective tax rates. In contrast, financially
+    constrained connected firms decrease their tax planning. The mechanism is that politically connected
+    constrained firms obtain new external debt financing at lower costs following the connection increase,
+    reducing their reliance on internal funds and thus diminishing the marginal benefit of tax savings.
+    This finding reveals a nuanced relationship: the value of political connections for tax purposes is
+    conditional on firms' access to alternative financing channels. The results are robust to alternative
+    proxies for tax planning and financial constraints, as well as placebo tests and alternative
+    identification strategies.
+  detail_results_zh: >
+    研究发现，在政治关联外生增加后，融资不受约束的企业显著加大了税收筹划力度，实际税率
+    随之降低。相比之下，融资严重受限的企业在获得政治关联后，反而减少了税收筹划活动。
+    其背后的机制是：融资受限的企业通过政治关联获得了成本更低的外部债务融资，降低了对
+    内部资金和税收节约的依赖，从而削弱了避税的边际收益。这一发现揭示了政治关联在企业
+    税收方面的价值具有条件性——它取决于企业能否获得替代性融资渠道。该结果在使用不同的
+    税收筹划和融资约束指标时均保持稳健，且通过了安慰剂检验和替代识别策略的验证。
+  detail_figures:
+    - src: /images/research/paper4/table_financial_constraints.png
+      caption_en: "Table 3: Political connections and tax planning by financial constraints"
+      caption_zh: "表3：不同融资约束下政治关联与税收筹划"
+      alt_en: "Subsample regression table for political connections, financial constraints, and tax planning"
+    - src: /images/research/paper4/table_external_financing.png
+      caption_en: "Table 6: External financing as the underlying mechanism"
+      caption_zh: "表6：外部融资机制"
+      alt_en: "Mechanism table showing political connections and access to external financing"

@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem "jekyll-theme-dinky"
 gem "jekyll-sitemap"
 gem "kramdown-parser-gfm"
 gem "sass-embedded", "< 1.100.0"

@@ -1,20 +1,18 @@
 ---
-layout: page
+layout: swiss-page
 title: Teaching
+title_zh: 教学
+subtitle: Corporate Finance · Asset Pricing · AI in Finance
+subtitle_zh: 公司金融 · 资产定价 · 金融AI
 permalink: /teaching/
 ---
 
-1. **Advanced Corporate Finance (Postgraduate)**  
-   Covers core topics in corporate finance at the graduate level, including investment decisions, risk and return, valuation, capital structure, payout policy, and selected frontier research topics.
-
-2. **Corporate Finance: Theory and Practice (Postgraduate)**  
-   Introduces the main theories and empirical applications of corporate finance, with an emphasis on connecting academic frameworks to real-world corporate decisions and financial markets.
-
-3. **Financial Economics and Asset Pricing (Undergraduate, Double Degree Program)**  
-   Provides an introduction to financial economics and modern asset pricing, including risk-return tradeoffs, portfolio choice, market efficiency, and basic pricing models.
-
-4. **Corporate Finance (Undergraduate, Double Degree Program)**  
-   Introduces the fundamental concepts of corporate finance, including firm objectives, investment appraisal, financing choices, firm valuation, and corporate decision-making.
-
-5. **Artificial Intelligence and Finance (Undergraduate)**  
-   Explores how machine learning and artificial intelligence can be applied in finance, with topics such as prediction, text analysis, financial data processing, and the broader interaction between AI and financial decision-making.
+{% for course in site.data.teaching %}
+<div class="swiss-course">
+  <div class="swiss-course__title"><span data-lang-en="{{ course.course }}" data-lang-zh="{{ course.course_zh | default: course.course }}">{{ course.course }}</span></div>
+  <div class="swiss-course__meta"><span data-lang-en="{{ course.school }}, {{ course.university }}" data-lang-zh="{{ course.school_zh | default: course.school }}，{{ course.university_zh | default: course.university }}">{{ course.school }}, {{ course.university }}</span> · <span data-lang-en="{{ course.term }}" data-lang-zh="{{ course.term_zh | default: course.term }}">{{ course.term }}</span></div>
+  {% if course.description %}
+  <div class="swiss-course__desc" style="margin-top:0.5rem;"><span data-lang-en="{{ course.description }}" data-lang-zh="{{ course.description_zh | default: course.description }}">{{ course.description }}</span></div>
+  {% endif %}
+</div>
+{% endfor %}

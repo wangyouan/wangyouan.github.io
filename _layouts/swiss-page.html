@@ -1,0 +1,53 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include layout/head.html %}
+</head>
+<body class="swiss-page">
+
+  <!-- Header -->
+  <header class="swiss-header">
+    <div class="swiss-header__inner">
+      <span class="swiss-header__name" data-lang-en="Youan Wang" data-lang-zh="王佑安">Youan Wang</span>
+      <button class="swiss-header__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="swiss-header__nav" id="mainNav">
+        <a href="/" class="swiss-header__link" data-lang-en="Bio" data-lang-zh="主页">Bio</a>
+        <a href="/research/" class="swiss-header__link {% if page.url == '/research/' %}active{% endif %}" data-lang-en="Research" data-lang-zh="研究">Research</a>
+        <a href="/teaching/" class="swiss-header__link {% if page.url == '/teaching/' %}active{% endif %}" data-lang-en="Teaching" data-lang-zh="教学">Teaching</a>
+        <a href="/students/" class="swiss-header__link {% if page.url == '/students/' %}active{% endif %}" data-lang-en="Join Us" data-lang-zh="招生招聘">Join Us</a>
+        <a href="/cv/" class="swiss-header__link" data-lang-en="CV" data-lang-zh="简历">CV</a>
+        <button class="swiss-header__lang" id="langToggle" data-lang="en">中</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <div class="swiss-page-header">
+      <a href="/" class="swiss-back"><span data-lang-en="← Back to Home" data-lang-zh="← 返回主页">← Back to Home</span></a>
+      <h1 class="swiss-page-header__title"><span data-lang-en="{{ page.title }}" data-lang-zh="{{ page.title_zh | default: page.title }}">{{ page.title }}</span></h1>
+      {% if page.subtitle %}
+      <p class="swiss-page-header__subtitle"><span data-lang-en="{{ page.subtitle }}" data-lang-zh="{{ page.subtitle_zh | default: page.subtitle }}">{{ page.subtitle }}</span></p>
+      {% endif %}
+    </div>
+
+    <!-- Content -->
+    <div class="swiss-content">
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="swiss-footer">
+    <span class="swiss-footer__name">Youan Wang</span>
+    <span class="swiss-footer__info" data-lang-en="Associate Professor of Finance · WISE & SOE, Xiamen University" data-lang-zh="金融学副教授 · 厦门大学王亚南经济研究院 & 经济学院">Associate Professor of Finance · WISE & SOE, Xiamen University</span>
+    <span class="swiss-footer__info">&copy; {{ site.time | date: '%Y' }} Youan Wang</span>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

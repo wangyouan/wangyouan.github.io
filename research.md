@@ -1,30 +1,118 @@
 ---
-layout: post
+layout: swiss-page
 title: Research
+title_zh: 研究
+subtitle: Empirical Corporate Finance · CSR · Political Economy · AI in Finance
+subtitle_zh: 实证公司金融 · 企业社会责任 · 政治经济学 · 金融AI
 permalink: /research/
 ---
 
-# Publications
-1. [Corporate Political Connections and Favorable Environmental Regulation](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3931)  
-Co worked with _Amanda Heitz_ and _Zigan Wang_.  
-_Management Science_, Volume 69, Issue 12, December 2023, 7151-7882, iii-iv.
-> We examine whether the Environmental Protection Agency (EPA) uniformly enforces the Clean Air Act for politically connected and unconnected firms using a close election setting. We find no difference in regulated pollutant emissions or EPA investigations between the two groups, though connected firms experience less regulatory enforcement and lower penalties. These results are more pronounced for firms connected to politicians capable of influencing regulatory bureaucrats and for connected firms that are more important to their supported politicians. Taken together, our results show that campaign contributions can indirectly benefit firms by way of reduced environmental regulatory enforcement and penalties.
+<h2 class="swiss-section__heading"><span data-lang-en="Published Work" data-lang-zh="已发表论文">Published Work</span></h2>
 
-2. [The Role of Financial Constraints in Firm Investment under Pollution Abatement Regulation](https://doi.org/10.1016/j.jcorpfin.2022.102252)  
-   Co worked with _Tri Vi Dang_ and _Zigan Wang_.
-_Journal of Corporate Finance_, Volume 76, October 2022, 102252.
-> This paper empirically analyzes pollution abatement regulation within the context of the Clean Air Act's nonattainment status designation and shows that financial constraints are an important determinant of whether spending on mandatory pollution abatement crowds out or stimulates R&D investment and capital expenditure. We show that spending on mandatory pollution abatement and other investments are complements for financially unconstrained firms but substitutes for constrained firms. Financially unconstrained firms invest more and have lower current profits but higher future profits; financially constrained firms invest less and have stable current profits but lower long-term profits. (JEL: G32, G38, Q58).
+{% for paper in site.data.publications %}
+<div class="swiss-card" id="pub-{{ forloop.index }}">
+  <div class="swiss-card__title">{{ paper.title }}</div>
+  <div class="swiss-card__meta">{{ paper.journal }}{% if paper.year != 'forthcoming' %} ({{ paper.year }}){% else %} (forthcoming){% endif %}</div>
+  {% if paper.coauthors %}
+  <div class="swiss-card__coauthors">with {% include coauthors-link.html coauthors=paper.coauthors %}</div>
+  {% endif %}
+  {% if paper.abstract %}
+  <div class="swiss-card__abstract"><span data-lang-en="{{ paper.abstract }}" data-lang-zh="{{ paper.abstract_zh | default: paper.abstract }}">{{ paper.abstract }}</span></div>
+  {% endif %}
+  {% if paper.doi %}
+  <a href="https://doi.org/{{ paper.doi }}" class="swiss-card__link" target="_blank" rel="noopener">DOI: {{ paper.doi }}</a>
+  {% endif %}
 
-3.  [The Power of the People: Labor Unions and Corporate Social Responsibility](https://academic.oup.com/rof/article/28/6/1833/7717974)  
-Co worked with _Amanda Heitz_ and _Zigan Wang_.  
-_Review of Finance_, Volume 28, Issue 6, November 2024, Pages 1833–1879.
-> Many policymakers and practitioners argue that corporations may become more stakeholder focused if employees are given more power. We study the causal impact of unionization on stakeholders by analyzing how close labor union elections affect environmental and social (E&S) scores. We find that unionization is associated with an increase in internal social scores that primarily benefit employees and a decrease in external E&S scores that primarily benefit non-employees. The negative effects on external E&S are amplified when firms have greater financial constraints. The effects on both internal and external E&S are magnified when labor unions have more bargaining power. Our results suggest that policymakers consider implications for all stakeholders before implementing policies that prioritize the corporate influence of one stakeholder group.
+  {% if paper.detail_method_en %}
+  <button class="swiss-detail-toggle" data-target="detail-pub-{{ forloop.index }}">
+    <span class="swiss-detail-toggle__icon">&#9660;</span>
+    <span class="swiss-detail-toggle__text" data-lang-en="View Details" data-lang-zh="查看详情">View Details</span>
+  </button>
+  <div class="swiss-detail" id="detail-pub-{{ forloop.index }}">
+    <!-- Research Design / 研究设计 -->
+    <div class="swiss-detail__section">
+      <div class="swiss-detail__heading"><span data-lang-en="Research Design" data-lang-zh="研究设计">Research Design</span></div>
+      <div class="swiss-detail__text"><span data-lang-en="{{ paper.detail_method_en | strip_newlines | escape_once }}" data-lang-zh="{{ paper.detail_method_zh | strip_newlines | escape_once }}">{{ paper.detail_method_en | strip_newlines | escape_once }}</span></div>
+    </div>
 
-# Working Papers
-1. [Political Connections, Financial Constraints, and Corporate Taxation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3893274)  
-   Co worked with _Ke Na_, _Terry J. Shevlin_ and _Zigan Wang_.  
-> We argue that the greater tax planning of politically connected firms documented in prior literature depends critically on firms' financial conditions, because political connections help financially constrained firms access external financing and consequently reduce their incentives to use tax planning as a source of internal financing. We find that after a plausibly exogenous increase in political connections, although financially unconstrained firms increase their tax planning, constrained firms decrease it. Moreover, constrained firms are more likely to obtain new external debt financing and their costs of debt are also lower after increased political connections. Importantly, the decreases in tax planning are more pronounced for constrained firms with new external debt, and when the connected politicians serve on the banking-related committees. Taken together, our paper highlights the importance of financial constraints in understanding the tax planning of politically connected firms.
+    <!-- Key Results / 主要发现 -->
+    <div class="swiss-detail__section">
+      <div class="swiss-detail__heading"><span data-lang-en="Key Results" data-lang-zh="主要发现">Key Results</span></div>
+      <div class="swiss-detail__text"><span data-lang-en="{{ paper.detail_results_en | strip_newlines | escape_once }}" data-lang-zh="{{ paper.detail_results_zh | strip_newlines | escape_once }}">{{ paper.detail_results_en | strip_newlines | escape_once }}</span></div>
+    </div>
 
-2. [Insider Trading Reforms and Corporate Transparency: Evidence from the STOCK Act](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5251620)  
-   Co worked with _Amanda Heitz_ and Zhige Yu.
-> We examine how insider trading restrictions on government officials affect corporate transparency. The 2012 STOCK Act prohibited executive branch officials from profiting from non-public information, potentially limiting firms' access to policy insights used in forecasting. Using a difference-in-differences design, we find that firms with significant government contracts reduced the frequency and precision of management forecasts following the Act. These firms also experienced declines in price informativeness and increases in implied cost of capital, suggesting weakened capital market information environments. Effects are strongest among politically engaged firms and those heavily reliant on government business, suggesting that the response reflects a loss of privileged information rather than heightened uncertainty. Text-based evidence from earnings calls reveals fewer procurement-related discussions and a rise in policy risk language. Our results suggest that insider trading reforms, while enhancing accountability, may inadvertently reduce firms' access to discretionary information, weakening disclosure quality and impairing market transparency.
+    {% if paper.detail_figures %}
+    <!-- Key Figures & Tables / 关键图表 -->
+    <div class="swiss-detail__section">
+      <div class="swiss-detail__heading"><span data-lang-en="Key Figures & Tables" data-lang-zh="关键图表">Key Figures & Tables</span></div>
+      <div class="swiss-detail__figures">
+        {% for fig in paper.detail_figures %}
+        <div class="swiss-detail__figure">
+          <a class="swiss-detail__image-link" href="{{ fig.src }}" target="_blank" rel="noopener" aria-label="Open table at full size">
+            <img src="{{ fig.src }}" alt="{{ fig.alt_en | default: fig.caption_en }}" loading="lazy">
+          </a>
+          <div class="swiss-detail__caption"><span data-lang-en="{{ fig.caption_en }}" data-lang-zh="{{ fig.caption_zh }}">{{ fig.caption_en }}</span></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+  {% endif %}
+
+</div>
+{% endfor %}
+
+<h2 class="swiss-section__heading" style="margin-top:3rem;"><span data-lang-en="Working Papers" data-lang-zh="工作论文">Working Papers</span></h2>
+
+{% for wp in site.data.working_papers %}
+<div class="swiss-card" id="wp-{{ forloop.index }}">
+  <div class="swiss-card__title">{{ wp.title }}</div>
+  {% if wp.coauthors %}
+  <div class="swiss-card__coauthors">with {% include coauthors-link.html coauthors=wp.coauthors %}</div>
+  {% endif %}
+  {% if wp.abstract %}
+  <div class="swiss-card__abstract"><span data-lang-en="{{ wp.abstract }}" data-lang-zh="{{ wp.abstract_zh | default: wp.abstract }}">{{ wp.abstract }}</span></div>
+  {% endif %}
+
+  {% if wp.detail_method_en %}
+  <button class="swiss-detail-toggle" data-target="detail-wp-{{ forloop.index }}">
+    <span class="swiss-detail-toggle__icon">&#9660;</span>
+    <span class="swiss-detail-toggle__text" data-lang-en="View Details" data-lang-zh="查看详情">View Details</span>
+  </button>
+  <div class="swiss-detail" id="detail-wp-{{ forloop.index }}">
+    <!-- Research Design / 研究设计 -->
+    <div class="swiss-detail__section">
+      <div class="swiss-detail__heading"><span data-lang-en="Research Design" data-lang-zh="研究设计">Research Design</span></div>
+      <div class="swiss-detail__text"><span data-lang-en="{{ wp.detail_method_en | strip_newlines | escape_once }}" data-lang-zh="{{ wp.detail_method_zh | strip_newlines | escape_once }}">{{ wp.detail_method_en | strip_newlines | escape_once }}</span></div>
+    </div>
+
+    <!-- Key Results / 主要发现 -->
+    <div class="swiss-detail__section">
+      <div class="swiss-detail__heading"><span data-lang-en="Key Results" data-lang-zh="主要发现">Key Results</span></div>
+      <div class="swiss-detail__text"><span data-lang-en="{{ wp.detail_results_en | strip_newlines | escape_once }}" data-lang-zh="{{ wp.detail_results_zh | strip_newlines | escape_once }}">{{ wp.detail_results_en | strip_newlines | escape_once }}</span></div>
+    </div>
+
+    {% if wp.detail_figures %}
+    <!-- Key Figures & Tables / 关键图表 -->
+    <div class="swiss-detail__section">
+      <div class="swiss-detail__heading"><span data-lang-en="Key Figures & Tables" data-lang-zh="关键图表">Key Figures & Tables</span></div>
+      <div class="swiss-detail__figures">
+        {% for fig in wp.detail_figures %}
+        <div class="swiss-detail__figure">
+          <a class="swiss-detail__image-link" href="{{ fig.src }}" target="_blank" rel="noopener" aria-label="Open table at full size">
+            <img src="{{ fig.src }}" alt="{{ fig.alt_en | default: fig.caption_en }}" loading="lazy">
+          </a>
+          <div class="swiss-detail__caption"><span data-lang-en="{{ fig.caption_en }}" data-lang-zh="{{ fig.caption_zh }}">{{ fig.caption_en }}</span></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+  {% endif %}
+
+</div>
+{% endfor %}

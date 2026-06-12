@@ -1,24 +1,53 @@
-- org:  WISE, Xiamen University
-  role: Advanced Corporate Finance (Postgraduate)
-  location: Fujian, China
-  when: 2023-2025 Spring
+- course: Advanced Corporate Finance (Postgraduate)
+  course_zh: 高级公司金融（研究生）
+  school: WISE
+  university: Xiamen University
+  university_zh: 厦门大学
+  term: 2023–2025 Spring
+  term_zh: 2023–2025 春季学期
+  description: "Covers core topics in corporate finance at the graduate level, including investment decisions, risk and return, valuation, capital structure, payout policy, and selected frontier research topics."
+  description_zh: "涵盖公司金融研究生阶段的核心议题，包括投资决策、风险与收益、估值、资本结构、股利政策及前沿研究专题。"
 
-- org:  WISE, Xiamen University
-  role: "Corporate Finance: Theory and Practice (Postgraduate)"
-  location: Fujian, China
-  when: 2026 Spring
+- course: "Corporate Finance: Theory and Practice (Postgraduate)"
+  course_zh: "公司金融：理论与实践（研究生）"
+  show_on_home: true
+  school: WISE
+  university: Xiamen University
+  university_zh: 厦门大学
+  term: 2026 Spring
+  term_zh: 2026 春季学期
+  description: "Introduces the main theories and empirical applications of corporate finance, with an emphasis on connecting academic frameworks to real-world corporate decisions and financial markets."
+  description_zh: "介绍公司金融的主要理论和实证应用，强调学术框架与现实公司决策及金融市场的联系。"
 
-- org:  WISE, Xiamen University
-  role: Financial Economics and Asset Pricing (Undergraduate, Double Degree Program)
-  location: Fujian, China
-  when: 2024 Spring&Summer
+- course: Financial Economics and Asset Pricing (Undergraduate, Double Degree Program)
+  course_zh: 金融经济学与资产定价（本科双学位）
+  school: WISE
+  university: Xiamen University
+  university_zh: 厦门大学
+  term: 2024 Spring & Summer
+  term_zh: 2024 春夏季学期
+  description: "Provides an introduction to financial economics and modern asset pricing, including risk-return tradeoffs, portfolio choice, market efficiency, and basic pricing models."
+  description_zh: "介绍金融经济学与现代资产定价，包括风险-收益权衡、投资组合选择、市场效率及基本定价模型。"
 
-- org:  WISE, Xiamen University
-  role: Corporate Finance (Undergraduate, Double Degree Program)
-  location: Fujian, China
-  when: 2025 Fall
+- course: Corporate Finance (Undergraduate, Double Degree Program)
+  course_zh: 公司金融（本科双学位）
+  show_on_home: true
+  school: WISE
+  university: Xiamen University
+  university_zh: 厦门大学
+  term: 2025 Fall
+  term_zh: 2025 秋季学期
+  description: "Introduces the fundamental concepts of corporate finance, including firm objectives, investment appraisal, financing choices, firm valuation, and corporate decision-making."
+  description_zh: "介绍公司金融的基本概念，包括企业目标、投资评估、融资选择、企业估值及公司决策。"
 
-- org:  Chow Institute, Xiamen University
-  role: Artificial Intelligence and Finance (Undergraduate)
-  location: Fujian, China
-  when: 2025 Fall
+- course: Artificial Intelligence and Finance (Undergraduate)
+  course_zh: 人工智能与金融（本科）
+  show_on_home: true
+  school: Chow Institute
+  school_zh: 邹至庄经济研究院
+  university: Xiamen University
+  university_zh: 厦门大学
+  term: 2025 Fall
+  term_zh: 2025 秋季学期
+  description: "Explores how machine learning and artificial intelligence can be applied in finance, with topics such as prediction, text analysis, financial data processing, and the broader interaction between AI and financial decision-making."
+  description_zh: "探索机器学习与人工智能在金融中的应用，涵盖预测、文本分析、金融数据处理及AI与金融决策的交叉议题。"
