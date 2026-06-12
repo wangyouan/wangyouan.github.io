@@ -1,17 +1,71 @@
-# Readme
+# wangyouan.github.io
 
-Nothing special, forked from [https://github.com/barryclark/jekyll-now](https://github.com/barryclark/jekyll-now)
+Personal academic homepage of **You'an Wang (王佑安)**, Assistant Professor of Finance at the Wang Yanan Institute for Studies in Economics (WISE), Xiamen University.
 
-## Before You Begin
-To complete this tutorial, you’ll need to have [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) installed. You can find the installation instructions on their websites.
+## Design
 
-## Add Jekyll
-Now, we’re going to use Bundler to add Jekyll as a dependency of our new project. This command will add the Jekyll gem to our Gemfile and install it to the ./vendor/bundle/ folder (or your default gem installation directory if you didn’t set a custom path).
+Swiss Modernism style, built as a custom Jekyll theme. Features:
 
-    bundle add jekyll
+- **Bilingual** — full Chinese/English toggle with `data-lang` attributes and localStorage persistence
+- **Responsive** — desktop 1440px, tablet 768px, mobile 375px breakpoints
+- **Data-driven** — all content in `_data/` YAML files (publications, presentations, teaching, service, grants, news, employment, education)
+- **Coauthor linking** — automatic name-to-URL matching via `_includes/coauthors-link.html`
+- **News with status tags** — upcoming events tagged `(Planned)` inline
 
-## Commend to run this project
-    bundle exec jekyll serve --watch
+### Sections
 
-## Serve the Site
-Your new website is ready! You can serve the website with `bundle exec jekyll serve` and visit it at http://127.0.0.1:4000. From here, you’re ready to continue developing the site on your own. All of the normal Jekyll commands are available to you, but you should prefix them with `bundle exec` so that Bundler runs the version of Jekyll that is installed in your project folder.
+| Page | Content |
+|------|---------|
+| Home (`/`) | Hero, News, Employment, Research, Teaching, Education |
+| Research (`/research/`) | Published papers + working papers with expandable detail panels |
+| Teaching (`/teaching/`) | Full course list with descriptions |
+| CV (`/cv/`) | Employment, Education, Research, Presentations, Service, Teaching |
+| Join Us (`/students/`) | Prospective students, RA recruitment, recommendation letter policy |
+
+## Tech Stack
+
+- [Jekyll](https://jekyllrb.com/) static site generator
+- SCSS (custom Swiss Modernism design system in `_sass/`)
+- Google Fonts: Crimson Pro (headings) + Atkinson Hyperlegible (body)
+- Vanilla JavaScript (language toggle, mobile menu, detail panels)
+
+## Run Locally
+
+```bash
+bundle exec jekyll serve
+open http://localhost:4000
+```
+
+## Project Structure
+
+```
+├── _data/              # YAML content files
+│   ├── publications.yml
+│   ├── working_papers.yml
+│   ├── presentations.yml
+│   ├── teaching.yml
+│   ├── grants.yml
+│   ├── employment.yml
+│   ├── education.yml
+│   ├── service.yml
+│   ├── peer_review.yml
+│   └── news.yml
+├── _includes/          # Liquid partials
+│   ├── coauthors-link.html
+│   └── layout/
+├── _layouts/           # Page layouts
+│   ├── swiss-home.html
+│   └── swiss-page.html
+├── _sass/              # Swiss Modernism design system
+│   ├── _swiss-tokens.scss
+│   ├── _swiss-base.scss
+│   ├── _swiss-layout.scss
+│   ├── _swiss-components.scss
+│   └── _swiss-responsive.scss
+├── assets/
+│   ├── js/main.js
+│   └── style.scss
+├── images/
+│   └── profile.jpg
+└── _config.yml
+```
