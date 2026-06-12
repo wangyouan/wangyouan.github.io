@@ -52,7 +52,7 @@
         {% for item in news_items limit:3 %}
         <div class="swiss-news-item">
           <span class="swiss-news-item__date"><span data-lang-en="{{ item.date_display_en | escape }}" data-lang-zh="{{ item.date_display_zh | escape }}">{{ item.date_display_en }}</span></span>
-          <span class="swiss-news-item__text"><span data-lang-en="{{ item.text_en | escape }}" data-lang-zh="{{ item.text_zh | escape }}">{{ item.text_en }}</span></span>
+          <span class="swiss-news-item__text"><span data-lang-en="{{ item.text_en | escape }}" data-lang-zh="{{ item.text_zh | escape }}">{{ item.text_en }}</span>{% if item.tag_en %} <span class="swiss-news-item__tag">(<span data-lang-en="{{ item.tag_en | escape }}" data-lang-zh="{{ item.tag_zh | escape }}">{{ item.tag_en }}</span>)</span>{% endif %}</span>
         </div>
         {% endfor %}
       </div>
