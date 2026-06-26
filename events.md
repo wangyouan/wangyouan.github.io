@@ -23,7 +23,9 @@ This file serves as a permanent record and is not displayed on the homepage.
 - **Date:** June 2026
 
 ### June — GCFC 2026
-- **Role:** Session Chair (Keynote Session IV; Generative AI and Corporate Finance)
+- **Role:** Program Committee, Keynote Chair & Session Chair
+- **Keynote chaired:** Shiyang Huang (HKU)
+- **Session chaired:** Generative AI and Corporate Finance
 - **Venue:** The 6th Greater China Area Finance Conference (GCFC 2026), Xiamen University, Xiamen, China
 - **Date:** June 2026
 
@@ -45,8 +47,13 @@ This file serves as a permanent record and is not displayed on the homepage.
 ## 2025
 
 ### 2025 — AI & Corporate Finance Forum
-- **Role:** Session Chair (AI and Corporate Governance)
+- **Role:** Program Committee, Session Chair (AI and Corporate Governance)
 - **Venue:** 首届人工智能与公司金融学术论坛
+
+### 2025 — Monetary Policy and Financial Markets Symposium
+- **Role:** Program Committee, Session Chair (Monetary Policy and Bond Market)
+- **Venue:** 首届货币政策与金融市场学术研讨会
+- **Date:** November 2025
 
 ### 2025 — Conference Presentation
 - "Accounting Perspectives Emerging Scholars Virtual Symposium" — Online

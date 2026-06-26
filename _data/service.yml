@@ -4,14 +4,8 @@
   venue: "China Banking and Corporate Finance (CBCF) Conference, Xiamen, China"
   venue_zh: "银行与公司金融学术研讨会（CBCF），中国厦门"
 
-- role: "Session Chair, Keynote Session IV"
-  role_zh: "分会主席，Keynote Session IV"
-  date: "2026"
-  venue: "The 6th Greater China Area Finance Conference (GCFC 2026), Xiamen, China"
-  venue_zh: "第六届大中华区金融年会（GCFC 2026），中国厦门"
-
-- role: "Session Chair, Generative AI and Corporate Finance"
-  role_zh: "分会主席，生成式AI与公司金融"
+- role: "Program Committee, Keynote Chair & Session Chair"
+  role_zh: "组委会成员，主旨演讲主席及分会主席"
   date: "2026"
   venue: "The 6th Greater China Area Finance Conference (GCFC 2026), Xiamen, China"
   venue_zh: "第六届大中华区金融年会（GCFC 2026），中国厦门"
@@ -21,6 +15,12 @@
   date: "2025"
   venue: "首届人工智能与公司金融学术论坛"
   venue_zh: "首届人工智能与公司金融学术论坛"
+
+- role: "Session Chair, Monetary Policy and Bond Market"
+  role_zh: "分会主席，货币政策与债券市场"
+  date: "2025"
+  venue: "首届货币政策与金融市场学术研讨会"
+  venue_zh: "首届货币政策与金融市场学术研讨会"
 
 - role: "Discussant"
   role_zh: "讨论人"
