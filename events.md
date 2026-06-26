@@ -7,20 +7,24 @@ This file serves as a permanent record and is not displayed on the homepage.
 
 ## 2026
 
-### June — ISAFE 2026 (Planned)
+### July — AMES 2026 Vietnam (Planned)
+- **Role:** Attendee
+- **Venue:** Asian Meeting of the Econometric Society (AMES 2026), Vietnam
+- **Date:** July 2026
+
+### June — ISAFE 2026
 - **Role:** Presenter
-- **Paper:** "Immigration Fear, Populism, and Institutional Investors" (with Xintong Li)
 - **Venue:** International Symposium for the Advancement of Financial Economics (ISAFE 2026), Beijing International Studies University, Beijing, China
 - **Date:** June 25–27, 2026
+
+### June — CEA UK/Europe 2026 China Annual Conference
+- **Role:** Attendee
+- **Venue:** CEA UK/Europe 2026 China Annual Conference, Beijing, China
+- **Date:** June 2026
 
 ### June — GCFC 2026
 - **Role:** Session Chair (Keynote Session IV; Generative AI and Corporate Finance)
 - **Venue:** The 6th Greater China Area Finance Conference (GCFC 2026), Xiamen University, Xiamen, China
-- **Date:** June 2026
-
-### June — CEA UK/Europe 2026 China Annual Conference (Planned)
-- **Role:** Attendee
-- **Venue:** CEA UK/Europe 2026 China Annual Conference, Beijing, China
 - **Date:** June 2026
 
 ### May — JFQA Publication
@@ -32,7 +36,7 @@ This file serves as a permanent record and is not displayed on the homepage.
 - **Venue:** China Banking and Corporate Finance (CBCF) Conference, Xiamen, China
 
 ### 2026 — Conferences (Presentations)
-- "Immigration Fear, Populism, and Institutional Investors" — ISAFE 2026, Beijing
+- Paper Presentation — ISAFE 2026, Beijing
 - "Second Conference on Contemporary Financial Development Trends and Transformations" — Suzhou, China
 - "第四届中国金融学论坛" — Beijing, China
 
