@@ -13,12 +13,15 @@ This file serves as a permanent record and is not displayed on the homepage.
 - **Date:** July 2026
 
 ### June — ISAFE 2026
-- **Role:** Presenter
+- **Role:** Presenter & Discussant
+- **Discussed:** "The U.S.–China Trade War and CEO Turnover: Evidence from Tradable and Non-Tradable Industries" (Qingjie Du)
 - **Venue:** International Symposium for the Advancement of Financial Economics (ISAFE 2026), Beijing International Studies University, Beijing, China
 - **Date:** June 25–27, 2026
 
 ### June — CEA UK/Europe 2026 China Annual Conference
-- **Role:** Attendee
+- **Role:** Session Chair & Presenter
+- **Session chaired:** Parallel Session 13 — Institutions and Green Innovation
+- **Paper presented:** "跨境融资开放与企业创新——基于跨境担保制度改革的准自然实验"
 - **Venue:** CEA UK/Europe 2026 China Annual Conference, Beijing, China
 - **Date:** June 2026
 
