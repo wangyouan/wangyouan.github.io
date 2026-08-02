@@ -7,10 +7,12 @@ This file serves as a permanent record and is not displayed on the homepage.
 
 ## 2026
 
-### July — AMES 2026 Vietnam (Planned)
-- **Role:** Attendee
-- **Venue:** Asian Meeting of the Econometric Society (AMES 2026), Vietnam
-- **Date:** July 2026
+### July 31 – Aug 2 — AMES 2026, Hanoi, Vietnam
+- **Role:** Presenter
+- **Paper:** "Beyond Trade Exposure: The U.S.–China Trade War and East Asian CEO Turnover"
+- **Venue:** 2026 Asia Meeting of the Econometric Society, East & Southeast Asia (AMES 2026), Meliá Hanoi Hotel, Hanoi, Vietnam
+- **Host:** Thuongmai University, AVSE Global, EMLV Business School
+- **Date:** July 31 – August 2, 2026
 
 ### June — ISAFE 2026
 - **Role:** Presenter & Discussant
