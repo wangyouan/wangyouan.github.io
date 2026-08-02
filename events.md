@@ -16,6 +16,7 @@ This file serves as a permanent record and is not displayed on the homepage.
 
 ### June — ISAFE 2026
 - **Role:** Presenter & Discussant
+- **Presented:** "Beyond Trade Exposure: The U.S.–China Trade War and East Asian CEO Turnover"
 - **Discussed:** "The U.S.–China Trade War and CEO Turnover: Evidence from Tradable and Non-Tradable Industries" (Qingjie Du)
 - **Venue:** International Symposium for the Advancement of Financial Economics (ISAFE 2026), Beijing International Studies University, Beijing, China
 - **Date:** June 25–27, 2026
