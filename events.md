@@ -7,6 +7,14 @@ This file serves as a permanent record and is not displayed on the homepage.
 
 ## 2026
 
+### Oct 17 — China Finance Forum · The 17th Forum of Journal of Financial Research
+- **Role:** Presenter
+- **Paper:** "高水平人才开放与中国企业转型升级——来自外部高技能人才政策冲击的证据" (co-authored with Tong Li, Fuwei Jiang)
+- **Session:** Parallel Forum 2 — 金融开放与普惠金融, Room 113
+- **Venue:** 中国金融论坛·第十七届《金融研究》论坛, School of Economics, Zhejiang University, Hangzhou, China
+- **Host:** 《金融研究》编辑部 (Journal of Financial Research Editorial Office), 浙江大学经济学院, 浙江大学金融研究院, 浙江省金融学会
+- **Date:** October 17, 2026
+
 ### July 31 – Aug 2 — AMES 2026, Hanoi, Vietnam
 - **Role:** Presenter
 - **Paper:** "Beyond Trade Exposure: The U.S.–China Trade War and East Asian CEO Turnover"
