@@ -29,7 +29,10 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Pinned to ubuntu-24.04: 'ubuntu-latest' was moved to ubuntu-26.04, which the
+    # pinned ruby/setup-ruby action below does not recognise (it reports the runner
+    # as self-hosted). Pin explicitly to keep a reproducible build environment.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -57,7 +60,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
