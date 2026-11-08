@@ -29,23 +29,27 @@ concurrency:
 jobs:
   # Build job
   build:
-    # Pinned to ubuntu-24.04: 'ubuntu-latest' was moved to ubuntu-26.04, which the
-    # pinned ruby/setup-ruby action below does not recognise (it reports the runner
-    # as self-hosted). Pin explicitly to keep a reproducible build environment.
+    # Pinned (not 'ubuntu-latest'): GitHub moved 'ubuntu-latest' to ubuntu-26.04,
+    # for which ruby-builder publishes no prebuilt Ruby <= 3.5 packages, forcing a
+    # slow and failure-prone source build. ubuntu-24.04 has a verified prebuilt
+    # Ruby 3.1.6 and is a GitHub-supported LTS image.
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Setup Ruby
-        # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        # Pinned to ruby/setup-ruby v1.338.0 (released 2026-11-06), the current
+        # release. Ruby 3.1 ships Bundler 2, so setup-ruby falls back to the
+        # bundled Bundler 2.3.27 instead of the Bundler 4 recorded in Gemfile.lock
+        # (Bundler 4 requires Ruby >= 3.2). This path is verified working.
+        uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
+          ruby-version: '3.1' # Matches the verified working build environment
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -53,7 +57,7 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   # Deployment job
   deploy:
@@ -65,4 +69,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
