@@ -228,9 +228,23 @@ The site is auto-deployed on push to master via GitHub Actions. No manual build 
 Key gems: jekyll 4.4.1, sass-embedded, kramdown-parser-gfm, jekyll-sitemap, jekyll-feed, jekyll-seo-tag
 
 ### CI/CD
-- GitHub Actions: `ruby/setup-ruby@v4` with Ruby 3.1, `actions/configure-pages@v5`, `actions/deploy-pages@v4`
+- Runner: **`ubuntu-24.04` (explicitly pinned, NOT `ubuntu-latest`)** — see note below
+- Actions: `actions/checkout@v7`, `ruby/setup-ruby@v1.338.0` (Ruby 3.1),
+  `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`
 - Build command: `bundle exec jekyll build --baseurl ...`
 - Environment: `JEKYLL_ENV=production`
+
+> **Why the runner is pinned (do not change to `ubuntu-latest` without checking):**
+> GitHub moved the `ubuntu-latest` label from ubuntu-24.04 to **ubuntu-26.04** around
+> November 2026. `ruby-builder` publishes **no prebuilt Ruby packages for ubuntu-26.04**
+> (verified: every `ruby-*-ubuntu-26.04.tar.gz` returns 404), so builds there fall back
+> to a slow and failure-prone source compilation. This caused the 2026-11-08 outage.
+> Before unpinning, confirm that a prebuilt Ruby exists for the new image:
+> `https://github.com/ruby/ruby-builder/releases/download/toolcache/ruby-<ver>-ubuntu-<image>.tar.gz`
+>
+> Also note: `Gemfile.lock` records `BUNDLED WITH 4.0.10`, but Bundler 4 requires
+> Ruby >= 3.2. On Ruby 3.1 `setup-ruby` automatically uses the bundled Bundler 2.3.27
+> instead; this fallback is what has kept CI green and is expected behaviour.
 
 ### No dependencies on
 - Python, R, Stata (not needed to build the site)
